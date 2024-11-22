@@ -16,30 +16,46 @@ document.getElementById('cardNumber').addEventListener('input', function (e) {
     e.target.value = formattedValue.substring(0, 19); // Limiting to 19 characters including spaces
   });
 
-
-// inout
-document.addEventListener("DOMContentLoaded", function () {
-  const upiInput = document.querySelector(".upi-input");
-
-  if (upiInput) {
-    // Attempt to focus immediately
-    upiInput.focus();
-
-    // Create an artificial click event to simulate user interaction
-    const event = new Event("click", { bubbles: true });
-    upiInput.dispatchEvent(event);
-
-    // For iOS: Use a timeout for the blur-focus workaround
-    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-    if (isIOS) {
-      setTimeout(() => {
-        upiInput.blur();
+  document.addEventListener("DOMContentLoaded", function () {
+    const upiInput = document.querySelector(".upi-input");
+    if (upiInput) {
+      // Attempt to focus on the input field
+      upiInput.focus();
+      // Add a touch event listener to trigger focus if the browser requires user interaction
+      document.body.addEventListener("click", function handleClick() {
         upiInput.focus();
-      }, 300);
+        document.body.removeEventListener("click", handleClick); // Remove listener after it's triggered
+      });
+      // Specifically handle iOS devices
+      const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isIOS) {
+        setTimeout(() => {
+          // Blur and re-focus hack
+          upiInput.blur();
+          upiInput.focus();
+        }, 300);
+      }
+    }
+  });
+
+
+  // Placeholder
+  function updatePlaceholder() {
+    const upiInput = document.querySelector(".upi-input");
+    if (upiInput) {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 520) {
+        upiInput.placeholder = "Tap to type UPI ID";
+      } else if (screenWidth > 520 && screenWidth <= 1900) {
+        upiInput.placeholder = "Type your UPI ID";
+      }
     }
   }
-});
-
-
-
+  
+  // Update placeholder on page load
+  document.addEventListener("DOMContentLoaded", updatePlaceholder);
+  
+  // Update placeholder on window resize
+  window.addEventListener("resize", updatePlaceholder);
+  
   

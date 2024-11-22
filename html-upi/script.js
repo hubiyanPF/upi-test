@@ -22,26 +22,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const upiInput = document.querySelector(".upi-input");
 
   if (upiInput) {
-    // Attempt to focus on the input field
+    // Attempt to focus immediately
     upiInput.focus();
 
-    // Add a touch event listener to trigger focus if the browser requires user interaction
-    document.body.addEventListener("click", function handleClick() {
-      upiInput.focus();
-      document.body.removeEventListener("click", handleClick); // Remove listener after it's triggered
-    });
+    // Create an artificial click event to simulate user interaction
+    const event = new Event("click", { bubbles: true });
+    upiInput.dispatchEvent(event);
 
-    // Specifically handle iOS devices
+    // For iOS: Use a timeout for the blur-focus workaround
     const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
     if (isIOS) {
       setTimeout(() => {
-        // Blur and re-focus hack
         upiInput.blur();
         upiInput.focus();
       }, 300);
     }
   }
 });
+
 
 
   

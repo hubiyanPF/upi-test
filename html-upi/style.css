@@ -1100,7 +1100,7 @@ gap: 1rem;
   }
 
   .accordion-button {
-    padding: var(--spacing-08) var(--spacing-16)  ;
+    padding: var(--spacing-10) var(--spacing-16)  ;
   }
   
   .accordion-body {
@@ -1112,7 +1112,7 @@ gap: 1rem;
   }
 
   .form-control, .form-select {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
     border-radius: var(--border-radius-10);
   }
 
@@ -1122,7 +1122,7 @@ gap: 1rem;
   }
 
   .checkout-button {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
     font-size: var(--font-14) !important;
     width: 100%;
     justify-content: center;

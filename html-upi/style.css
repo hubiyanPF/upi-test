@@ -1,0 +1,1485 @@
+:root {
+    /* Color Pallette */
+
+    /* blue COLORS */
+      /* Blue */
+    --blue-50:  #E6F3FF;
+    --blue-100: #B0D9FF;
+    --blue-200: #8AC7FF;
+    --blue-300: #54ADFF;
+    --blue-400: #339DFF;
+    --blue-500: #0085FF;
+    --blue-600: #0079E8;
+    --blue-700: #005EB5;
+    --blue-800: #00498C;
+    --blue-900: #00386B;
+
+      /* Dark Blue */
+    --dark-blue-50:  #EBF2F9;
+    --dark-blue-100: #C2D6EB;
+    --dark-blue-200: #A5C2E2;
+    --dark-blue-300: #7CA7D4;
+    --dark-blue-400: #6295CC;
+    --dark-blue-500: #3B7BBF;
+    --dark-blue-600: #3670AE;
+    --dark-blue-700: #2A5788;
+    --dark-blue-800: #204469;
+    --dark-blue-900: #193450;
+
+    /* Green */
+    --green-50:  #EAF6EC;
+    --green-100: #BCE4C5;
+    --green-200: #9CD7A9;
+    --green-300: #6FC482;
+    --green-400: #53B96A;
+    --green-500: #28A745;
+    --green-600: #24983F;
+    --green-700: #1C7731;
+    --green-800: #165C26;
+    --green-900: #11461D;
+
+      /* Black */
+    --black-sec-50:  #FDFEFC;
+    --black-sec-100: #FAFDF6;
+    --black-sec-200: #F8FCF2;
+    --black-sec-300: #F4FAEC;
+    --black-sec-400: #F2F9E8;
+    --black-sec-500: #EFF8E2;
+    --black-sec-600: #D9E2CE;
+    --black-sec-700: #AAB0A0;
+    --black-sec-800: #83887C;
+    --black-sec-900: #64685F;
+    --black-sec-950: #2C2C2C;
+
+    /* Indicative colors */
+    /* Red */
+    --red-50:  #FEECE8;
+    --red-100: #FBC4B6;
+    --red-200: #F9A793;
+    --red-300: #F67F62;
+    --red-400: #F46643;
+    --red-500: #F14014;
+    --red-600: #DB3A12;
+    --red-700: #AB2D0E;
+    --red-800: #85230B;
+    --red-900: #651B08;
+
+     /* Yellow */
+    --yellow-50:  #FFFCEF;
+    --yellow-100: #FFF5CE;
+    --yellow-200: #FFF1B6;
+    --yellow-300: #FFEA95;
+    --yellow-400: #FFE681;
+    --yellow-500: #FFE061;
+    --yellow-600: #E8CC58;
+    --yellow-700: #B59F45;
+    --yellow-800: #8C7B35;
+    --yellow-900: #6B5E29;
+
+     /* Yellow */
+    --green-ind-50:  #E6FDE6;
+    --green-ind-100: #B0F9B3;
+    --green-ind-200: #8AF68E;
+    --green-ind-300: #54F25A;
+    --green-ind-400: #33F03A;
+    --green-ind-500: #00EC09;
+    --green-ind-600: #00D708;
+    --green-ind-700: #00A806;
+    --green-ind-800: #008205;
+    --green-ind-900: #006304;
+
+
+
+    /* Spacing */
+    --spacing-04: 0.25rem;
+    --spacing-06: 0.375rem;
+    --spacing-08: 0.5rem;
+    --spacing-10: 0.625rem;
+    --spacing-12: 0.75rem;
+    --spacing-14: 0.875rem;
+    --spacing-16: 1rem;
+    --spacing-18: 1.125rem;
+    --spacing-20: 1.25rem;
+    --spacing-22: 1.375rem;
+    --spacing-24: 1.5rem;
+    --spacing-26: 1.625rem;
+    --spacing-28: 1.75rem;
+    --spacing-30: 1.875rem;
+    --spacing-32: 2rem;
+    --spacing-34: 2.125rem;
+    --spacing-36: 2.25rem;
+    --spacing-38: 2.375rem;
+    --spacing-40: 2.5rem;
+    --spacing-42: 2.625rem;
+    --spacing-44: 2.75rem;
+    --spacing-46: 2.875rem;
+    --spacing-48: 3rem;
+    --spacing-50: 3.125rem;
+    --spacing-52: 3.25rem;
+    --spacing-54: 3.375rem;
+    --spacing-56: 3.5rem;
+    --spacing-58: 3.625rem;
+    --spacing-60: 3.75rem;
+    --spacing-62: 3.875rem;
+    --spacing-64: 4rem;
+    --spacing-66: 4.125rem;
+    --spacing-68: 4.25rem;
+    --spacing-70: 4.375rem;
+    --spacing-72: 4.5rem;
+    --spacing-74: 4.625rem;
+    --spacing-76: 4.75rem;
+    --spacing-78: 4.875rem;
+    --spacing-80: 5rem;
+    --spacing-82: 5.125rem;
+    --spacing-84: 5.25rem;
+    --spacing-86: 5.375rem;
+    --spacing-88: 5.5rem;
+    --spacing-90: 5.625rem;
+    --spacing-92: 5.75rem;
+    --spacing-94: 5.875rem;
+    --spacing-96: 6rem;
+    --spacing-98: 6.125rem;
+    --spacing-100: 6.25rem;
+    --spacing-102: 6.375rem;
+    --spacing-104: 6.5rem;
+    --spacing-106: 6.625rem;
+    --spacing-108: 6.75rem;
+    --spacing-110: 6.875rem;
+    --spacing-112: 7rem;
+    --spacing-114: 7.125rem;
+    --spacing-116: 7.25rem;
+    --spacing-118: 7.375rem;
+    --spacing-120: 7.5rem;
+    --spacing-122: 7.625rem;
+    --spacing-124: 7.75rem;
+    --spacing-126: 7.875rem;
+    --spacing-128: 8rem;
+    --spacing-130: 8.125rem;
+    --spacing-132: 8.25rem;
+    --spacing-134: 8.375rem;
+    --spacing-136: 8.5rem;
+    --spacing-138: 8.625rem;
+    --spacing-140: 8.75rem;
+    --spacing-142: 8.875rem;
+    --spacing-144: 9rem;
+    --spacing-146: 9.125rem;
+    --spacing-148: 9.25rem;
+    --spacing-150: 9.375rem;
+    --spacing-152: 9.5rem;
+    --spacing-154: 9.625rem;
+    --spacing-156: 9.75rem;
+    --spacing-158: 9.875rem;
+    --spacing-160: 10rem;
+    --spacing-162: 10.125rem;
+    --spacing-164: 10.25rem;
+    --spacing-166: 10.375rem;
+    --spacing-168: 10.5rem;
+    --spacing-170: 10.625rem;
+    --spacing-172: 10.75rem;
+    --spacing-174: 10.875rem;
+    --spacing-176: 11rem;
+    --spacing-178: 11.125rem;
+    --spacing-180: 11.25rem;
+    --spacing-182: 11.375rem;
+    --spacing-184: 11.5rem;
+    --spacing-186: 11.625rem;
+    --spacing-188: 11.75rem;
+    --spacing-190: 11.875rem;
+    --spacing-192: 12rem;
+    --spacing-200: 12.125rem;
+
+    /* BACKGROUND COLOR */
+    --primary-background: #F4F4F4;
+    --accordion-background: #EFF0F7;
+    --bg-white:#fff;
+  
+  
+   /* FONTS SIZE */
+    --font-10: 0.625rem;   
+    --font-12: 0.75rem;    
+    --font-14: 0.875rem;   
+    --font-16: 1rem;       
+    --font-18: 1.125rem;   
+    --font-20: 1.25rem;    
+    --font-22: 1.375rem;    
+    --font-24: 1.5rem;    
+    --font-26: 1.625rem;    
+    --font-28: 1.75rem;    
+    --font-30: 1.875rem;    
+    --font-32: 2rem;    
+    --font-34: 2.125rem;    
+    --font-36: 2.25rem;    
+  
+   /* BORDER WIDTH */
+    --border-1: 1px; 
+    --border-2: 2px; 
+    --border-3: 3px; 
+    --border-4: 4px; 
+    --border-5: 5px;
+    --border-10: 10px;
+  
+   /* BORDER RADIOUS */
+    --border-radius-0: 0px;
+    --border-radius-2: 2px;
+    --border-radius-4: 4px;
+    --border-radius-6: 6px;
+    --border-radius-10: 10px;
+    --border-radius-12: 12px;
+    --border-radius-14: 14px;
+    --border-radius-16: 16px;
+    --border-radius-18: 18px;
+    --border-radius-20: 20px;
+    --border-radius-22: 22px;
+    --border-radius-24: 24px;
+    --border-radius-26: 26px;
+    --border-radius-28: 28px;
+    --border-radius-30: 30px;
+    --border-radius-32: 32px;
+
+  }
+  
+  /*----------------COMPONENT----------------- */
+  /* FONT SIZE */
+  .font-10{font-size: var(--font-10) !important}
+  .font-12{font-size:var(--font-12) !important}    
+  .font-14{font-size:var(--font-14) !important}    
+  .font-16{font-size:var(--font-16) !important}    
+  .font-18{font-size:var(--font-18) !important}    
+  .font-20{font-size:var(--font-20) !important}
+  
+/* CSS */
+body {
+  background-color: var(--blue-50);
+  font-family: "Inter", sans-serif;
+}
+
+.bg-card {
+  background-color: var(--bg-white);
+  min-width: 60%;
+  max-width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: var(--border-radius-32);
+  box-shadow: 12px 12px 42px #0d0d0e06;
+}
+
+h1 {
+  font-size: var(--font-28);
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo {
+  width: 5.625rem;
+  object-fit: contain;
+}
+
+h2 {
+  font-size: var(--font-22);
+  font-weight: 700;
+}
+
+.transaction-head {
+  color: var(--dark-blue-100);
+}
+
+.summary-box {
+  background-color: var(--dark-blue-500);
+  padding: 2rem;
+  border-radius: var(--border-radius-22) var(--border-radius-22) var(--border-radius-0) var(--border-radius-0);
+  gap: var(--spacing-32);
+}
+
+h3 {
+  font-size: var(--font-18);
+  font-weight: 600;
+  margin: 0;
+}
+
+h5 {
+  font-size: var(--font-16);
+  font-weight: 600;
+  color: var(--dark-blue-500);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.summary-details {
+  gap: var(--spacing-16);
+}
+.summary-row {
+  padding-bottom: var(--spacing-08);
+  border-bottom: 1px solid var(--dark-blue-300);
+}
+
+
+.chip-summary {
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--dark-blue-700);
+  border-radius: var(--border-radius-6);
+  height: fit-content;
+}
+
+.chip-text {
+  line-height: 120%;
+  font-size: var(--font-14);
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.chip-text {
+  color: var(--blue-50);
+}
+.chip-text-tag {
+  color: var(--blue-100);
+}
+
+.chip-wrapper {
+  gap: 0.5rem;
+}
+
+.heading-wrapper {
+  gap: var(--spacing-08);
+}
+
+.time-chip-alt {
+  padding-bottom: var(--spacing-08);
+  border-bottom: 1px solid var(--black-sec-600);
+}
+
+.summary-info {
+  color: var(--black-sec-50);
+}
+
+.payment-head {
+  color: var(--blue-900);
+  margin: 0;
+}
+
+.payment-box {
+  padding: 0;
+  gap: 1rem;
+  border-radius: var(--border-radius-12);
+  overflow: hidden;
+  padding: var(--spacing-32);
+}
+
+.nav {
+  background-color: var(--blue-100);
+  padding: var(--spacing-04);
+}
+.nav-link {
+  color: var(--dark-blue-900) !important;
+  padding: var(--spacing-12);
+}
+.nav-link.active {
+  background-color: var(--dark-blue-800) !important;
+  border-radius: var(--border-radius-10);
+  color: var(--black-sec-100) !important;
+}
+.nav-link:active {
+  background-color: var(--dark-blue-900) !important;
+  border-radius: var(--border-radius-10);
+  color: var(--black-sec-100) !important;
+}
+
+.tab-pane {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.logos-and-heading {
+  gap: var(--spacing-16);
+}
+
+.hr {
+  color: var(--blue-200);
+  width: 100%;
+  height: 1px;
+  margin: 0;
+}
+
+.upi-methods-disabled {
+  width: 60%;
+  object-fit: contain;
+}
+
+.accordion-item {
+  border-radius: 6px !important;
+  border: none;
+}
+.accordion {
+  border-radius: var(--spacing-12) !important;
+  overflow: hidden;
+  border: 1px solid var(--blue-300);
+}
+
+.accordion-head-wrapper {
+  gap: 0.625rem;
+  font-weight: 700;
+}
+
+.accordion-head {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-18);
+  text-align: left;
+
+}
+.accordion-head.active {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-18);
+  border-bottom: 1px solid var(--blue-500) !important;
+}
+
+.accordion-button {
+  background-color: var(--blue-50);
+  border-bottom: 1px solid var(--blue-300);
+  color: var(--blue-900);
+}
+
+.accordion-button:not(.collapsed)  {
+  background-color: var(--blue-100);
+  border-bottom: 1px solid var(--blue-500); 
+}
+
+.accordion-button.collapsed::after {
+  background: url("images/expand_circle.svg");
+  width: 24px;
+  height: 24px;
+}
+.accordion-button:not(.collapsed)::after {
+  background: url("images/expand_circle.svg");
+  width: 24px;
+  height: 24px;
+}
+
+
+.accordion-body {
+  border-radius: 0px 0px 6px 6px !important;
+}
+
+
+.form-label,.form-label-as-heading  {
+  font-size: var(--font-16);
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-label {
+  color: var(--black-sec-950);
+}
+
+.form-label-as-heading {
+  color: var(--blue-700);
+}
+
+.form-control, .form-select {
+  padding: 1rem 0.75rem;
+  font-size: var(--font-16);
+  line-height: 120%;
+  font-weight: 500;
+  border-radius: var(--border-radius-12);
+  border: solid 2px var(--green-700);
+  color: var(--black-sec-800);
+  font-weight: 500;
+}
+/*🔴 Input error state CSS 🔴*/
+.form-control-error {
+  border: solid 2px var(--red-500);
+}
+/*🔴 Input error state CSS 🔴*/
+
+.form-wrapper {
+  gap: 1rem;
+}
+
+.checkout-button {
+  font-size: var(--font-16) !important;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  background-color: var(--green-500) !important;
+  border: transparent;
+  color: var(--bg-white);
+  gap: 0.75rem;
+  transition: ease-in-out .15s;
+}
+
+
+.checkout-button:hover {
+  background-color: var(--green-600) !important;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.checkout-button:active {
+  background-color: var(--green-700) !important;
+}
+
+.checkout-button-secondary {
+  background-color: var(--green-100) !important;
+  color: var(--green-900);
+}
+.checkout-button-secondary:hover {
+  background-color: var(--green-200) !important;
+  color: var(--green-900);
+}
+.checkout-button-secondary:active {
+  background-color: var(--green-300) !important;
+  color: var(--green-900) !important;
+}
+
+.spinner-border {
+  width: var(--spacing-18);
+  height: var(--spacing-18);
+  border: none;
+  animation: 1.25s linear infinite var(--bs-spinner-animation-name);
+}
+.custom-spinner {
+  width: var(--spacing-18) !important;
+  height: var(--spacing-18) !important;
+}
+
+
+.upi-input-wrapper {
+  gap: 0.5rem;
+}
+
+.checkout-button-sm {
+  padding: 0.375rem 1rem;
+  font-weight: 700;
+  font-size: var(--font-14);
+  color: var(--green-900);
+  border-radius: 6px;
+  background-color: var(--green-100);
+  border: none;
+  max-height: fit-content !important;
+}
+
+.checkout-button-sm:hover {
+  color: var(--green-900);
+  background-color: var(--green-100);
+}
+.checkout-button-sm:active {
+  color: var(--green-900) !important;
+  background-color: var(--green-200) !important;
+}
+
+.p-method-icon {
+  height: var(--spacing-38);
+}
+
+.pix-input-wrapper {
+  gap: 1rem;
+}
+
+.invalid-chip, .valid-chip   {
+  padding: var(--spacing-04);
+  width: fit-content;
+  height: fit-content;
+  gap: var(--spacing-04);
+  border-radius: var(--border-4);
+}
+
+.valid-chip {
+  background: var(--green-ind-200);
+  color: var(--green-ind-900);
+}
+.invalid-chip {
+  background: var(--red-100);
+  color: var(--red-900);
+}
+
+.valid-text {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.badge-ico {
+  width: var(--spacing-18);
+  height: var(--spacing-18);
+}
+.form-and-label-wrapper {
+  gap: 0.25rem !important;
+}
+
+.small-button-wrapper {
+  gap: var(--spacing-08);
+}
+
+.normal-help {
+  color: var(--black-sec-800);
+}
+.form-help-wrapper {
+  gap: 0;
+}
+
+.qr-tray {
+  padding: 0.75rem;
+  background-color: var(--bg-white);
+  border-radius: var(--border-radius-12);
+}
+
+.copy-icon {
+  width: 1.25rem;
+}
+
+.custom-tooltip {
+  background-color: #1D9000;
+  color: #0d0e0d;
+}
+
+.form-check .form-check-input {
+  margin: 0;
+}
+
+.bank-check {
+  padding: 0.75rem;
+  background-color: var(--green-100);
+  border-radius: var(--border-radius-12);
+  width: 100%;
+  height: auto;
+  transition: ease-in-out .15s;
+  border: none;
+  gap: 1rem;
+  max-width: 25%;
+}
+
+.form-check-label {
+  gap: 1rem;
+}
+
+.bank-label {
+  font-size: var(--font-14);
+  color: var(--green-900);
+  font-weight: 600;
+  line-height: 120%;
+  text-align: left;
+}
+
+.netbanking-wrapper {
+  gap: 1rem;
+}
+
+.gap-32-wrapper {
+  gap: 2rem;
+}
+
+.gap-16-wrapper {
+  gap: 1rem;
+  padding: var(--spacing-32);
+}
+
+.bank-details-heading {
+  padding-bottom: 0.75rem;
+}
+
+.copy-button-togg {
+  background-color: var(--green-100);
+  padding:var(--spacing-12) var(--spacing-16);
+  border: none;
+  border-radius: 8px;
+  gap: var(--spacing-08);
+  font-weight: 500;
+  color: var(--green-800);
+}
+.copy-button-togg:hover {
+  background-color: var(--green-200);
+}
+.copy-button-togg:active {
+  background-color: var(--green-300);
+}
+
+.head-n-tag {
+  gap: 0.375rem;
+}
+
+.head-bank-details {
+  font-size: var(--font-14);
+  color: var(--black-sec-800);
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+  line-height: 120%;
+}
+
+.tag-bank-details {
+  font-size: var(--font-18);
+  color: var(--black-sec-900);
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+  line-height: 120%;
+}
+
+.info-row {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--green-ind-300);
+}
+
+.instruction-div {
+  gap: var(--spacing-08);
+}
+
+.alert-chip-with-icon {
+  width: fit-content;
+}
+
+.contents-bank-transfer {
+  gap: 1.5rem;
+}
+
+.bank-depo-gap16 {
+  gap: 1rem;
+}
+
+.down-button {
+  width: 20px;
+}
+
+.arrow-nterbanking {
+  width: 2rem;
+  height: 2rem;
+}
+
+.banking-logo {
+  height: 2.5rem;
+  width: 2.5em;
+  object-fit: contain !important;
+  display: flex !important;
+  align-items: start !important;
+}
+
+.wallets-icon {
+  width: 4rem;
+  object-fit: contain;
+}
+
+.alipay-wrapper {
+  gap: .5rem;
+}
+
+.alipay-content-wrapper {
+gap: 1rem;
+}
+
+.alipay-info-tray {
+  background-color: var(--green-50);
+  border: 1px solid var(--green-100);
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-10);
+}
+.head-alipay-details {
+  font-size: var(--font-14);
+  color: var(--green-500);
+  font-weight: 600;
+  margin: 0;
+}
+.tag-alipay-details {
+  font-size: var(--font-18);
+  color: var(--green-900);
+  margin: 0;
+  font-weight: 600;
+}
+.alipay-info-wrapper {
+  gap: 1rem;
+}
+
+.help-text {
+  font-size: var(--font-14);
+  font-weight: 500;
+  color: var(--black-sec-800);
+  margin: 0;
+}
+.help-red {
+  color: var(--red-600);
+} 
+
+.card-payment-form {
+  gap: 1.5rem;
+}
+
+.overlay-div {
+  display: none;
+}
+
+.copy-button-togg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upi-expiry-img {
+  width: 10%;
+}
+
+.upi-expiry-tag {
+  font-size: var(--font-16);
+  color: var(--black-sec-800);
+  font-weight: 600;
+  text-align: center;
+}
+
+.expiry-transaction-wrapper {
+  gap: .5rem;
+}
+
+.kyc-tag {
+  color: var(--black-sec-800);
+  margin: 0;
+  font-weight: 500;
+}
+
+.kyc-bg {
+  background-color: var(--bg-white);
+  min-width: 60% !important;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: var(--border-radius-22);
+  box-shadow: 12px 12px 42px #0d0d0e06;
+  padding: 1.25rem;
+  gap: var(--spacing-32);
+
+}
+
+.alert-chip-with-icon {
+  padding: 0.375rem 0.5rem;
+  background-color: #FEFFC1;
+  border-radius: var(--border-radius-10);
+}
+
+.danger_icon {
+  width: 1.4rem;
+}
+
+.danger-text {
+  color: #484900;
+  font-weight: 400;
+}
+
+.aadhar_logo {
+  object-fit: contain;
+}
+
+.link-kyc {
+  color: var(--blue-600);
+  font-weight: 700;
+}
+
+.state-descrition {
+  color: var(--blue-900);
+  font-weight: 700;
+  font-size: var(--font-18);
+}
+
+.buttons-zero {
+  display: none !important;
+}
+
+.checkout-cancel {
+  background-color: transparent !important;
+  color: var(--blue-800);
+  font-weight: 800;
+  text-decoration: underline !important;
+  border: none;
+}
+
+
+
+.payment-and-cancel {
+  padding: var(--spacing-32);
+  gap: 1rem;
+}
+
+.timer-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.fawry-icon {
+  width: 100%;
+  object-fit: contain;
+}
+.fawry-check {
+  width: fit-content;
+  min-width: 10rem !important;
+}
+
+.kyc-head-and-tag {
+  gap: 0.5rem;
+ }
+
+ .danger-heading {
+  font-size: var(--font-16);
+  font-weight: 600;
+  color: var(--yellow-800);
+ }
+ .danger-alert-text {
+  font-size: var(--font-14);
+  font-weight: 500;
+  color: var(--yellow-800);
+ }
+ .danger-content {
+  gap: var(--spacing-08);
+ }
+ .danger-box {
+  padding: 0.5rem  0.375rem;
+ }
+
+ .nude-form, .nude-form:focus {
+  border: none !important;
+  background-color: transparent;
+ }
+
+ .special-input {
+  gap: var(--spacing-04);
+ }
+
+ .special-form-control {
+  padding: var(--spacing-04);
+ }
+
+ .fawri-text-ins {
+  background-color: var(--green-50);
+  width: 100%;
+  padding: var(--spacing-16);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--green-300);
+  color: var(--green-700);
+ }
+ .checkout-iframe {
+  min-height: 20rem;
+  background-color: var(--black-sec-300);
+  border-radius: var(--border-radius-10);
+ }
+
+ .instruction-box {
+  background-color: var(--yellow-100);
+  padding: var(--spacing-16);
+  border: 1px solid var(--yellow-600);
+  border-radius: var(--border-radius-14);
+ }
+ 
+ .instruction-head {
+  color: var(--yellow-800);
+  font-weight: 600;
+  font-size: var(--font-16);
+ }
+ .instruction-content {
+  color: var(--yellow-800);
+  font-weight: 500;
+  font-size: var(--font-14);
+ }
+
+ .fawry-download {
+  background-color: var(--green-500);
+  color: var(--black-sec-100);
+ }
+ .fawry-download:hover {
+  background-color: var(--green-600);
+  color: var(--black-sec-100);
+ }
+ .fawry-download:active {
+  background-color: var(--green-700) !important;
+  color: var(--black-sec-100) !important;
+ }
+.smallbtn {
+  padding: var(--spacing-08) var(--spacing-12);
+  height: fit-content;
+  background-color: #F6FBFF;
+  border: 1px solid var(--blue-600);
+  border-radius: var(--spacing-06);
+  color: var(--blue-700);
+  font-size: var(--spacing-16);
+  font-weight: 500;
+}
+.time-wrapper {
+  background-color: var(--black-sec-600);
+  padding: var(--spacing-06);
+  border-radius: var(--spacing-08);
+  .time-text {
+    color: var(--black-sec-950);
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 990px) {
+
+  .bg-card {
+    min-width: 95% !important;
+    border-radius: var(--border-radius-22);
+  }
+
+  .kyc-bg {
+    width: 90%;
+  }
+
+  .time-chip-alt {
+    display: none;
+  }
+
+  .heading-wrapper {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start !important;
+  }
+
+  .upi-expiry-img {
+    width: 15%;
+  }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 520px) {
+
+  body {
+    background-color: #FFF;
+  }
+  h1 {
+    font-size: var(--font-20);
+  }
+
+  h2 {
+    font-size: var(--font-18) ;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: var(--font-16);
+  }
+
+  .chip-text {
+    font-size: var(--font-12);
+  }
+
+
+  .bg-card {
+    min-width: 100% !important;
+    border-radius: var(--border-radius-00);
+    margin: 0 0 3rem 0;
+    gap: var(--spacing-16);
+  }
+
+  .summary-box {
+    border-radius: var(--border-radius-0);
+    padding: var(--spacing-32) var(--spacing-16)var(--spacing-16)var(--spacing-16);
+    gap: var(--spacing-16);
+  }
+
+  .payment-and-cancel {
+    padding: 0 var(--spacing-08) var(--spacing-08) var(--spacing-08);
+    gap: 1rem;
+  }
+
+  .heading-wrapper {
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start !important;
+  }
+
+  .time-chip {
+    display: none !important;
+  }
+
+
+  .accordion-head-wrapper {
+    display: flex;
+  }
+  .accordion-head {
+    font-size: var(--font-14);
+    font-weight: 700;
+  }
+
+  .accordion-button {
+    padding: var(--spacing-08) var(--spacing-16)  ;
+  }
+  
+  .accordion-body {
+    padding: var(--spacing-16) !important;
+  }
+
+  .form-label, .form-control, .form-select {
+    font-size: var(--font-14);
+  }
+
+  .form-control, .form-select {
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius-10);
+  }
+
+  .checkout-button-sm {
+    padding: 0.25rem .5rem;
+    max-height: fit-content !important;
+  }
+
+  .checkout-button {
+    padding: 0.75rem 1rem;
+    font-size: var(--font-14) !important;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .small-button-wrapper {
+    gap: 1rem;
+  }
+
+  .button-wrapper {
+    width: 100%;
+  }
+
+  .qr-tray, .qr-image {
+    width: auto !important;
+    max-width: 100%;
+  }
+  .form-wrapper {
+    padding: 0 !important;
+  }
+  .pix-qr-holder {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .payment-box {
+    gap: 1rem;
+    padding: var(--spacing-16) var(--spacing-08) ;
+  }
+
+  .banking-logo {
+    width: 1.7rem;
+  }
+  
+  .bank-check {
+    padding: .5rem;
+    gap: .75rem;
+    align-items: center;
+    min-width:9.2rem !important;
+  }
+
+
+  .relative-div {
+    position: relative;
+  }
+  .netbanking-no-overflow {
+    max-width: 100%;
+    overflow: scroll;
+
+    z-index: 1;
+    padding-bottom: .5rem;
+  }
+  .overlay-div {
+    display: block;
+    background: linear-gradient(to right, #ffffff00, #ffffff) !important;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 2;
+    height: 100%;
+    width: 20%;
+  }
+
+  .special-form-control {
+    padding: var(--spacing-04);
+  }
+
+  .pix-qr-holder {
+    gap: var(--spacing-16) !important;
+  }
+
+  .nude-form {
+    padding: var(--spacing-04);
+    border-radius: 0;
+  }
+
+  .netbanking-logo-and-ico {
+    gap: 2rem;
+  }
+
+  .head-bank-details {
+    font-size: var(--font-12);
+  }
+
+  .tag-bank-details {
+    font-size: var(--font-16);
+  }
+
+  .alipay-info-tray {
+    padding: .5rem;
+  }
+
+  .head-alipay-details {
+    font-size: var(--font-12);
+  }
+
+  .tag-alipay-details {
+    font-size: var(--font-14);
+  }
+
+  .alipay-info-wrapper {
+    width: auto;
+  }
+
+  .upi-expiry-img {
+    width: 20%;
+  }
+  .time-text {
+    font-size: var(--spacing-14);
+  }
+
+  .kyc-tag {
+    font-size: var(--font-16); 
+   }
+
+   .kyc-head-and-tag {
+    gap: 0.5rem;
+   }
+
+   .kyc-head {
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+   }
+
+   .state-descrition {
+    color: var(--blue-900);
+    font-weight: 700;
+    font-size: var(--font-16);
+    text-align: center;
+  }
+
+  .logo {
+    width: 4.7rem;
+  }
+
+  .relative-div {
+    position: relative;
+    height: fit-content !important;
+  }
+  .netbanking-no-overflow {
+    overflow: scroll;
+    z-index: 1;
+    padding-bottom: .5rem;
+  }
+  .overlay-div {
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 2;
+    height: 100%;
+    width: 20%;
+  }
+  .bank-label {
+    font-size: var(--font-12);
+  }
+  .form-check-label {
+    gap: var(--spacing-08);
+    height: fit-content !important;
+  }
+
+
+  .buttons-zero {
+    display: flex !important;
+    opacity: 0;
+  }
+
+  .pix-input-wrapper {
+    width: 100% !important;
+  }
+  .gap-16-wrapper {
+    padding: var(--spacing-08);
+    gap: 0.5rem;
+  }
+  .upi-methods-disabled {
+    width: 100%;
+  }
+  .invalid-chip, .valid-chip   {
+    padding: 0.125rem 0.25rem 0.125rem 0.25rem;
+    width: fit-content;
+    height: fit-content;
+    gap: var(--spacing-04);
+    border-radius: var(--border-4);
+    font-size: var(--font-12) !important;
+  }
+
+  .help-text {
+    font-size: var(--font-12);
+  }
+  .nav-link {
+    padding: 0.75rem !important;
+  }
+  .upi-expiry-tag {
+    font-size: var(--font-14);
+  }
+  .danger-heading {
+    font-size: var(--font-14);
+
+   }
+   .danger-alert-text {
+    font-size: var(--font-12);
+
+   }
+   .qr-help-text {
+    font-size: var(--font-12);
+   }
+
+   .expiry-date-and-year {
+    /* flex-direction: column; */
+    gap: 4px !important;
+   }
+
+   .fawry-icon {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .fawri-text-ins {
+    font-size: var(--font-14);
+  }
+
+  .instruction-head {
+    font-size: var(--font-14);
+   }
+   .instruction-content {
+    font-size: var(--font-12);
+   }
+
+   .kyc-bg {
+    max-width: 95%;
+  }
+
+  .kyc-illustration {
+    width: 100% !important;
+  }
+
+  .instruction-box {
+    align-items: flex-start !important;
+  }
+
+  .payment-head {
+    text-align: center;
+  }
+  .smallbtn {
+    padding: var(--spacing-06) var(--spacing-10);
+    font-size: var(--spacing-14);
+    font-weight: 500;
+  }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 1170px) {
+    .pix-qr-holder {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .pix-label {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    .res-400-col {
+      flex-direction: column;
+    }
+    .fawry-download-btn-wrapper {
+      justify-content: flex-start !important;
+    }
+
+  }
+
+
+  .gap-04-box {
+    gap: var(--spacing-04);
+}
+
+.gap-08-box {
+    gap: var(--spacing-08);
+}
+
+.gap-08-box {
+    gap: var(--spacing-08);
+}
+
+.gap-10-box {
+    gap: var(--spacing-10);
+}
+
+.gap-12-box {
+    gap: var(--spacing-12);
+}
+
+.gap-14-box {
+    gap: var(--spacing-14);
+}
+
+.gap-16-box {
+    gap: var(--spacing-16);
+}
+
+.gap-18-box {
+    gap: var(--spacing-18);
+}
+
+.gap-20-box {
+    gap: var(--spacing-20);
+}
+
+.gap-22-box {
+    gap: var(--spacing-22);
+}
+
+.gap-24-box {
+    gap: var(--spacing-24);
+}
+
+.gap-26-box {
+    gap: var(--spacing-26);
+}
+
+.gap-28-box {
+    gap: var(--spacing-28);
+}
+
+.gap-30-box {
+    gap: var(--spacing-30);
+}
+
+.gap-32-box {
+    gap: var(--spacing-32);
+}
+.gap-34-box {
+    gap: var(--spacing-34);
+}
+.gap-36-box {
+    gap: var(--spacing-36);
+}
+.gap-38-box {
+    gap: var(--spacing-38);
+}
+.gap-40-box {
+    gap: var(--spacing-40);
+}
+
+.gap-64-box {
+    gap: var(--spacing-64);
+}
+.gap-01-box {
+    gap: 1%;
+}
+.no-border {
+  border-bottom: none !important;
+}

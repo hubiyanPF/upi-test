@@ -1,0 +1,1031 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout Page</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+
+
+  <!-- Wrapper Div -->
+  <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 ">
+
+    <!-- White Card -->
+    <div class="bg-card d-flex flex-column justify-content-center align-items-center">
+
+
+
+        <!-- Payment Options -->
+        <div class="d-flex flex-column payment-box w-100">
+          <div class="d-flex flex-column align-items-start justify-content-between heading-wrapper gap-24-box w-100">
+          <!-- Timer -->
+          <div class="d-flex time-chip-alt w-100 justify-content-between align-items-center w-100">
+            
+            <p class="time-text">
+              Expires in:
+            </p>
+            
+            <div class="d-flex time-wrapper gap-08-box align-items-center">
+              <img class="timer-icon" src="images/schedule-icon.png" alt="">
+              <div class="d-flex gap-04-box">
+                <p class="time-text">
+                  13m
+                </p>
+                <p class="time-text">
+                  12s
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2 class="payment-head">Complete your payment</h2>
+          </div>
+          <!-- Accordions -->
+          <div class="accordion d-flex flex-column" id="accordionExample">
+            <!-- UPI -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/upi-icon.png" alt="">
+                    <p class="accordion-head">UPI</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- Accordion Contents -->
+                  <div class="d-flex flex-column align-items-end form-wrapper gap-32-wrapper">
+                    <div class="d-flex flex-column upi-input-wrapper w-100">
+
+
+                      <div class="d-flex flex-column form-and-label-wrapper form-help-wrapper">
+                        <div class="label-and-stat d-flex w-100 justify-content-between align-items-center">
+                          <label for="formGroupExampleInput" class="form-label">Enter your UPI ID</label>
+                        </div>
+                        <input type="text" class="form-control upi-input" id="formGroupExampleInput" placeholder="upi@id">
+                        <p class="help-text normal-help">Examples: example@ybl, example@okhadfcbank, example@paytm</p>
+                        <p class="help-text help-red"> ! Type your UPI ID here</p>
+                        <p class="help-text help-red"> ! Enter a valid UPI ID</p>
+                      </div>
+
+                      
+                    </div>
+                    <div class="button-wrapper w-100">
+                      <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                        </span>
+                        Pay ₹ 500
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Net Banking -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed no-border" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <!-- heading contents -->
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/net-banking-icon.png" alt="">
+                    <p class="accordion-head">Net Banking</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- Accordion contents -->
+                  <div class="d-flex flex-column netbanking-wrapper">
+                    <label class="form-label-as-heading">Popular Banks</label>
+                    <div class="d-flex flex-column gap-32-wrapper">
+                      <div class="relative-div">
+                        <div class="overlay-div"></div>
+                        <div class="netbanking-no-overflow">
+                          <div class="d-flex gap-2">
+  
+  
+                            <div class="form-check bank-check d-flex">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                              <label class="form-check-label d-flex flex-column w-100 h-100" for="flexRadioDefault2">
+                                <img class="banking-logo" src="images/sbi.png" alt="SBI bank logo">
+                                <div class="bank-label">State Bank Of India</div>
+                              </label>
+                            </div>
+  
+                            <div class="form-check bank-check d-flex">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              <label class="form-check-label d-flex flex-column w-100 h-100" for="flexRadioDefault1">
+                                <img class="banking-logo" src="images/kotak.png" alt="SBI bank logo">
+                                <div class="bank-label">Kotak Bank</div>
+                              </label>
+                            </div>
+  
+                            <div class="form-check bank-check d-flex">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                              <label class="form-check-label d-flex flex-column w-100 h-100" for="flexRadioDefault3">
+                                <img class="banking-logo" src="images/icici.png" alt="SBI bank logo">
+                                <div class="bank-label">ICICI</div>
+                              </label>
+                            </div>
+  
+                            <div class="form-check bank-check d-flex">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                              <label class="form-check-label d-flex flex-column w-100 h-100" for="flexRadioDefault4">
+                                <img class="banking-logo" src="images/axis.png" alt="SBI bank logo">
+                                <div class="bank-label">Axis Bank</div>
+                              </label>
+                            </div>
+  
+                            <div class="form-check bank-check d-flex buttons-zero">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefaultnone">
+                              <label class="form-check-label d-flex flex-column w-100 h-100" for="flexRadioDefaultnone">
+                                <img class="banking-logo" src="images/axis.png" alt="SBI bank logo">
+                                <div class="bank-label">Axis Bank</div>
+                              </label>
+                            </div>
+  
+  
+  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column pix-input-wrapper w-100">
+                        <div class="d-flex flex-column form-and-label-wrapper">
+                          <label for="formGroupExampleInput" class="form-label">OR Select Your Bank</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option value="1">ICICI Bank</option>
+                            <option value="2">Kotak Bank</option>
+                            <option value="4">Federal Bank</option>
+                            <option value="5">HDFC Bank</option>
+                            <option value="6">State Bank of India</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrapper d-flex w-100 justify-content-end w-100">
+                      <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center w-100 justify-content-center" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                        </span>
+                        Pay INR 500
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- D-none -->
+            <!-- PIX - Brazil -->
+            <div class="accordion-item d-none">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <!-- heading contents -->
+                              <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                                <img class="p-method-icon" src="images/pix-icon.png" alt="">
+                                <p class="accordion-head">PIX</p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <!-- Accordion Contents -->
+                              <!-- First Screen -->
+                              <div class="d-flex flex-column align-items-end form-wrapper">
+                                <div class="d-flex flex-column pix-input-wrapper w-100">
+                                  <div class="d-flex flex-column form-and-label-wrapper">
+                                    <label for="formGroupExampleInput" class="form-label">Select Document Type</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                  <div class="d-flex flex-column form-and-label-wrapper">
+                                    <label for="formGroupExampleInput" class="form-label">Enter Document Number</label>
+                                    <input type="number" class="form-control" id="formGroupExampleInput" placeholder="123456787890">
+                                  </div>
+                                </div>
+                                <div class="button-wrapper">
+                                  <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+                                    <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                                      aria-hidden="true">
+                                      <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                                    </span>
+                                    Pay BRL 500
+                                  </button>
+                                </div>
+                              </div>
+                              <!-- Second Screen -->
+                              <label for="formGroupExampleInput" class="form-label pix-label">Scan This QR</label>
+                              <div class="d-flex pix-qr-holder">
+                                <div class="qr-tray d-flex justify-content-center">
+                                  <img class="qr-image" src="images/dummy-qr.png" alt="PIX QR code for scanning">
+                                </div>
+                                <div class="d-flex flex-column align-items-end justify-content-center form-wrapper w-100 px-2">
+                                  <div class="d-flex flex-column special-input w-100">
+                                    <label for="formGroupExampleInput" class="form-label">QR Code String</label>
+                                    <div class="d-flex form-control special-form-control">
+                                      
+                                      <input type="text" class="form-control nude-form" id="formGroupExampleInput"
+                                        placeholder="123456787890hdjkdk93930fbgojer9803jejnjv948fhncoudcn">
+                                        <button type="button" class="d-flex btn-primary copy-button-togg ">Copy
+                                          <img class="copy-icon" src="images/copy-icon.png" alt="">
+                                        </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button-wrapper mt-3">
+                                <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                                  <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                                    aria-hidden="true">
+                                    <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                                  </span>
+                                  Return Home
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+            <!-- Bank Deposit -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <!-- heading contents -->
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/bank-deposit-icon.png" alt="">
+                    <p class="accordion-head">Bank Deposit</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- Accordion contents -->
+                  <!-- First Screen -->
+                  <div class="d-flex flex-column netbanking-wrapper justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center pix-input-wrapper w-100">
+                      <div class="d-flex flex-column form-and-label-wrapper w-100">
+                        <label for="formGroupExampleInput" class="form-label">Select Your Bank</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1">ICICI Bank</option>
+                          <option value="2">Kotak Bank</option>
+                          <option value="4">Federal Bank</option>
+                          <option value="5">HDFC Bank</option>
+                          <option value="6">State Bank of India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="button-wrapper w-100 d-flex justify-content-end">
+                      <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                        </span>
+                        Proceed to Pay
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Second Screen -->
+                  <div class="bank-depo-gap16 d-flex flex-column">
+                    
+                    <div class="d-flex justify-content-between w-100 align-items-start res-400-col">
+                      <label class="form-label-as-heading bank-details-heading">Bank Details</label>
+                      <button type="button" class="btn btn-primary btn-sm checkout-button-sm fawry-download">Download
+                        as PDF <img class="down-button" src="images/download-light.png" alt="">
+                    </button>
+                    </div>
+                    <div class="contents-bank-transfer d-flex flex-column">
+                      <div class="info-row d-flex justify-content-between">
+                        <div class="head-n-tag d-flex flex-column">
+                          <p class="head-bank-details">
+                            Account Name
+                          </p>
+                          <p class="tag-bank-details">
+                            Dummy Name
+                          </p>
+                        </div>
+                        <button type="button" class="d-flex btn-primary copy-button-togg d-none d-none d-none">
+                          <img class="copy-icon" src="images/copy-dark.png" alt="">
+                        </button>
+                      </div>
+                      <div class="info-row d-flex justify-content-between">
+                        <div class="head-n-tag d-flex flex-column">
+                          <p class="head-bank-details">
+                            Account Number
+                          </p>
+                          <div class="d-flex gap-2">
+                            <p class="tag-bank-details">
+                              1234
+                            </p>
+                            <p class="tag-bank-details">
+                              5678
+                            </p>
+                            <p class="tag-bank-details">
+                              9870
+                            </p>
+                            <p class="tag-bank-details">
+                              4321
+                            </p>
+                          </div>
+                        </div>
+                        <button type="button" class="d-flex btn-primary copy-button-togg d-none d-none">
+                          <img class="copy-icon" src="images/copy-dark.png" alt="">
+                        </button>
+                      </div>
+                      <div class="info-row d-flex justify-content-between">
+                        <div class="head-n-tag d-flex flex-column">
+                          <p class="head-bank-details">
+                            Bank Name
+                          </p>
+                          <p class="tag-bank-details">
+                            Dummy Bank
+                          </p>
+                        </div>
+                        <button type="button" class="d-flex btn-primary copy-button-togg d-none d-none">
+                          <img class="copy-icon" src="images/copy-dark.png" alt="">
+                        </button>
+                      </div>
+                      <div class="info-row d-flex justify-content-between">
+                        <div class="head-n-tag d-flex flex-column">
+                          <p class="head-bank-details">
+                            Bank Code
+                          </p>
+                          <p class="tag-bank-details">
+                            10028FBL
+                          </p>
+                        </div>
+                        <button type="button" class="d-flex btn-primary copy-button-togg d-none d-none">
+                          <img class="copy-icon" src="images/copy-dark.png" alt="">
+                        </button>
+                      </div>
+                      <div class="info-row d-flex justify-content-between">
+                        <div class="head-n-tag d-flex flex-column">
+                          <p class="head-bank-details">
+                            Expiry date
+                          </p>
+                          <div class="d-flex gap-2">
+                            <p class="tag-bank-details">
+                              24-04-2024
+                            </p>
+                            <p class="tag-bank-details">
+                              |
+                            </p>
+                            <p class="tag-bank-details">
+                              22:03
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- instructions -->
+                    <div class="d-flex flex-column instruction-div">
+                      <h6 class="m-0">Please <span><strong>deposit the exact amount</strong></span> to the above account details</h6>
+                      <div class="alert-chip-with-icon d-flex justify-content-center align-items-center gap-2">
+                        <img class="danger_icon" src="images/Danger_Icon.png" alt="danger Icon">
+                        <p class="chip-text danger-text">Do not close or refresh this page</p>
+                      </div>
+                    </div>
+                    <!-- instructions end-->
+
+                    <!-- Return Button Spinner -->
+
+                    <div class="button-wrapper w-100">
+                      <button class="btn btn-primary checkout-button checkout-button-secondary d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48-dark.png" alt="">
+                        </span>
+                        Return Home
+                      </button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Wallets -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <!-- heading contents -->
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/wallets-icon.png" alt="">
+                    <p class="accordion-head">Wallets</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- Accordion contents -->
+                  <!-- Alipay Flow -->
+                  <!-- First Screen -->
+                  <div class="d-flex flex-column netbanking-wrapper justify-content-center align-items-center ">
+                    <div class="d-flex flex-column justify-content-center align-items-center pix-input-wrapper w-100">
+                      <div class="d-flex flex-column form-and-label-wrapper w-100">
+                        <label for="formGroupExampleInput" class="form-label">Select Your Wallet</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1">Choose a Wallet</option>
+                          <option value="1">Alipay</option>
+                          <option value="2">bKash</option>
+                          <option value="4">Nagad</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="button-wrapper w-100 d-flex justify-content-end">
+                      <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                        </span>
+                        Proceed to Pay
+                      </button>
+                    </div>
+                  </div>
+                  <!-- First Screen end -->
+                  <!-- Second Screen -->
+                  <div class="d-flex flex-column align-items-center justify-content-center alipay-wrapper">
+                    <div class="alipay-content-wrapper d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <img class="wallets-icon" src="images/Alipay-icon.png" alt="">
+                        <label for="formGroupExampleInput" class="form-label">Scan This QR</label>
+                      </div>
+                      <div class="qr-tray alipay-tray">
+                        <img class="qr-image" src="images/dummy-qr.png" alt="PIX QR code for scanning">
+                      </div>
+                      <div class="alipay-info-wrapper d-flex">
+                        <div class="alipay-info-tray w-100">
+                          <p class="head-alipay-details">
+                            Alipay Name
+                          </p>
+                          <p class="tag-alipay-details">
+                            Merchant123
+                          </p>
+                        </div>
+                        <div class="alipay-info-tray w-100">
+                          <p class="head-alipay-details">
+                            Alipay Number
+                          </p>
+                          <p class="tag-alipay-details">
+                            12876qy
+                          </p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <!-- instructions -->
+                    <div class="d-flex gap-08-box justify-content-center instruction-box">                   
+                        <img src="images/inst-object-bulb.svg" alt="">
+                        <p class="instruction-head">
+                          Please deposit the exact amount to the above wallet details
+                        </p>
+                  </div>
+                  <!-- instructions end-->
+                    <div class="button-wrapper w-100">
+                      <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                        </span>
+                        Return Home
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Second Screen end -->
+                  <!-- Alipay Flow end -->
+
+                  <!-- Bangladesh Flow bKash -->
+                  <div class="d-flex flex-column align-items-cente r justify-content-center alipay-wrapper gap-16-box">
+                    <iframe src="" frameborder="0" class="checkout-iframe w-100">                    
+                    </iframe>
+                    <div class="d-flex flex-column instruction-box gap-16-box w-100 align-items-start">
+                      <div class="d-flex gap-08-box align-items-center">
+                        <img src="images/inst-object-bulb.svg" alt="">
+                        <p class="instruction-head">
+                          Payment instructions:
+                        </p>
+                      </div>
+                      <div class="d-flex flex-column gap-08-box">
+                        <p class="instruction-content">
+                          1. Launch Bkash app & Choose 'Cashout'
+                        </p>
+                        <p class="instruction-content">
+                          2. Enter or paste the wallet number displayed above
+                        </p>
+                        <p class="instruction-content">
+                          3. Complete the transaction & copy the transaction ID
+                        </p>
+                        <p class="instruction-content">
+                          4. Paste the transaction ID & your wallet number to finalize the payment
+                        </p>
+                      </div>
+                    </div>
+                    <div class="button-wrapper w-100">
+                      <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                        </span>
+                        Return Home
+                      </button>
+                    </div>
+                  </div>
+                   <!-- Bangladesh Flow bKash end-->
+                  
+                </div>
+              </div>
+            </div>
+            <!-- QR Payment -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <!-- heading contents -->
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/qr_code_icon.png" alt="">
+                    <p class="accordion-head">QR</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- Accordion contents -->
+                  <!-- First Screen -->
+                  <div class="d-flex flex-column netbanking-wrapper justify-content-center align-items-center ">
+                    <div class="d-flex flex-column justify-content-center align-items-center pix-input-wrapper w-100">
+                      <div class="d-flex flex-column form-and-label-wrapper w-100">
+                        <label for="formGroupExampleInput" class="form-label">Select Your Bank</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1">Bank 1</option>
+                          <option value="2">Bank 2</option>
+                          <option value="4">Bank 3</option>
+                          <option value="5">Bank 4</option>
+                        </select>
+                      </div>
+                      <div class="button-wrapper w-100 d-flex justify-content-end">
+                        <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+                          <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                            aria-hidden="true">
+                            <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                          </span>
+                          Proceed to Pay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Second Screen -->
+                  <div class="alipay-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex justify-content-between alipay-tray">
+                      <label for="formGroupExampleInput" class="form-label">Scan This QR</label>
+                    </div>
+                    <div class="qr-tray alipay-tray">
+                      <img class="qr-image" src="images/dummy-qr.png" alt="PIX QR code for scanning">
+                    </div>
+                    <p class="help-text">
+                      Please confirm transaction in next 5 mins
+                    </p>
+                    <!-- Return Button Spinner -->
+                  <div class="button-wrapper w-100">
+                    <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                      <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                        aria-hidden="true">
+                        <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                      </span>
+                      Return Home
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Payment -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <!-- heading contents -->
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/card-payment-icon.png" alt="">
+                    <p class="accordion-head">Card</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- Accordion contents -->
+                  <!-- First Screen -->
+                  <div class="d-flex flex-column card-payment-form">
+                    <!-- HTML: The maxlength attribute is set to 19 to account for the 16 digits plus 3 spaces. -->
+                    <div class="d-flex flex-column form-and-label-wrapper">
+                      <label for="cardNumber" class="form-label">Enter Your Card Number</label>
+                      <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 7890 1234" maxlength="19">
+                    </div>
+                    
+                    <div class="d-flex flex-column form-and-label-wrapper">
+                      <label for="formGroupExampleInput" class="form-label">Name On Card</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+                    </div>
+                    <div class="d-flex flex-column gap-08-box ">
+                      <label for="formGroupExampleInput" class="form-label">Expiry Date (MM/YYYY)</label>
+                      <div class="d-flex w-100 gap-08-box expiry-date-and-year">
+                        <div class="d-flex flex-column form-and-label-wrapper w-100">
+                      
+                          <select class="form-select" aria-label="Default select example">
+                            <option value="1">Choose Month</option>
+                            <option value="2">01</option>
+                            <option value="4">02</option>
+                            <option value="5">03</option>
+                            <option value="7">04</option>
+                            <option value="8">05</option>
+                            <option value="9">06</option>
+                            <option value="10">07</option>
+                            <option value="11">08</option>
+                            <option value="12">09</option>
+                            <option value="13">10</option>
+                            <option value="14">11</option>
+                            <option value="15">12</option>
+                          </select>
+                        </div>
+                        <div class="d-flex flex-column justify-content-end form-and-label-wrapper w-100">
+                          <select class="form-select" aria-label="Default select example">
+                            <option value="1">Choose Year</option>
+                            <option value="2">2024</option>
+                            <option value="4">2025</option>
+                            <option value="5">2026</option>
+                            <option value="7">2027</option>
+                            <option value="8">2028</option>
+                            <option value="9">2029</option>
+                            <option value="10">2030</option>
+                            <option value="11">2031</option>
+                            <option value="12">2032</option>
+                            <option value="13">2034</option>
+                            <option value="14">2035</option>
+                            <option value="15">2036</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex w-100 gap-4">
+                      <div class="d-flex flex-column form-and-label-wrapper w-100">
+                        <label for="formGroupExampleInput" class="form-label">CVV</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="123">
+                      </div>
+                    </div>
+                                     <!-- Pay button Spinner -->
+                  <div class="button-wrapper w-100 d-flex justify-content-end">
+                    <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+                      <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                        aria-hidden="true">
+                        <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                      </span>
+                      Proceed to Pay
+                    </button>
+                  </div>
+                  </div>
+                  <!-- Second Screen -->
+                  <div class="d-flex flex-column card-payment-form">
+                    <div class="d-flex flex-column form-and-label-wrapper">
+                      <label for="exampleInputPassword1" class="form-label">Enter OTP</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                                      <!-- Pay button Spinner -->
+                  <div class="button-wrapper w-100 d-flex justify-content-end">
+                    <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+                      <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                        aria-hidden="true">
+                        <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                      </span>
+                      Confirm Payment
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cash Payment -->
+            <div class="accordion-item d-none">
+              <button
+                class="accordion-button col-12 d-flex justify-content-between flex-wrap collapsed col-12 d-flex justify-content-between flex-wrap"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                aria-controls="collapseEight">
+                <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                  <img class="p-method-icon" src="images/Cash_icon.png" alt="">
+                  <p class="accordion-head">Cash</p>
+                </div>
+                </span>
+              </button>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                              <!-- First Screen -->
+                              <div class="netbanking-no-overflow">
+                                <div class="d-flex flex-column pix-input-wrapper">
+                                    <div class="form-check bank-check d-flex align-items-center fawry-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefaultCash">
+                                        <label class="form-check-label d-flex flex-column align-items-start h-100 gap-12-box"
+                                            for="flexRadioDefaultCash">
+                                            <img class="bank-ico fawry-icon" src="images/fawry-pay.png"
+                                                alt="SBI bank logo">
+                                            <div class="bank-label">Pay at Fawry</div>
+                                        </label>
+                                    </div>
+
+                                                      <!-- Pay button Spinner -->
+                  <div class="button-wrapper w-100 d-flex justify-content-end w-100">
+                    <button class="btn btn-primary checkout-button justify-content-center d-flex gap-3 align-items-center w-100" type="button">
+                      <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                        aria-hidden="true">
+                        <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+                      </span>
+                      Proceed to Pay
+                    </button>
+                  </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Screen -->
+                            <div class="bank-depo-gap16 d-flex flex-column">
+                                <div class="d-flex w-100 res-400-col">
+                                  <label class="form-label bank-details-heading w-100">Pay At Fawry</label>
+                                  <div class="button-wrapper d-flex justify-content-end fawry-download-btn-wrapper w-100">
+                                    <button type="button" class="btn btn-primary btn-sm checkout-button-sm fawry-download">Download
+                                        as PDF <img class="down-button" src="images/download-light.png" alt="">
+                                    </button>
+                                                                </div>
+                                </div>
+                                <div class="contents-bank-transfer d-flex flex-column">
+                                    <div class="info-row d-flex justify-content-between">
+                                        <div class="head-n-tag d-flex flex-column">
+                                            <p class="head-bank-details">
+                                                Reference Number
+                                            </p>
+                                            <p class="tag-bank-details">
+                                                10028FBL
+                                            </p>
+                                        </div>
+                                        <button type="button" class="d-flex btn-primary copy-button-togg d-none">
+                                            <img class="copy-icon" src="images/copy-dark.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="info-row d-flex justify-content-between">
+                                        <div class="head-n-tag d-flex flex-column">
+                                            <p class="head-bank-details">
+                                                Expiry date (UTC)
+                                            </p>
+                                            <div class="d-flex gap-2">
+                                                <p class="tag-bank-details">
+                                                    24-04-2024
+                                                </p>
+                                                <p class="tag-bank-details">
+                                                    |
+                                                </p>
+                                                <p class="tag-bank-details">
+                                                    22:03
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- instructions -->
+                                <div class="d-flex gap-08-box align-items-center instruction-box">
+                                  <img src="images/inst-object-bulb.svg" alt="">
+                                  <p class="instruction-head">
+                                    Please complete payment at Fawry store before order expiry time
+                                  </p>
+                                </div>
+                                <!-- instructions end-->
+                    <!-- Return Button Spinner -->
+                    <div class="button-wrapper w-100">
+                      <button class="btn btn-primary checkout-button checkout-button-secondary d-flex gap-3 align-items-center justify-content-center w-100" type="button">
+                        <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+                          aria-hidden="true">
+                          <img class="custom-spinner" src="images/Ellipse-48-dark.png" alt="">
+                        </span>
+                        Return Home
+                      </button>
+                    </div>
+                            </div>
+                                              
+                </div>
+              </div>
+            </div>
+            <!-- Voucher -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button col-12 d-flex justify-content-between flex-wrap collapsed col-12 d-flex justify-content-between flex-wrap"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                  aria-controls="collapseNine">
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/voucher_icon.png" alt="">
+                    <p class="accordion-head">Voucher</p>
+                  </div>
+
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This Feature Is under Development</strong>
+                </div>
+              </div>
+            </div>
+            <!-- Pay Later -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button col-12 d-flex justify-content-between flex-wrap collapsed col-12 d-flex justify-content-between flex-wrap"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                  aria-controls="collapseTen">
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/pay_later_icon.png" alt="">
+                    <p class="accordion-head">Pay Later</p>
+                  </div>
+
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This Feature Is under Development</strong>
+                </div>
+              </div>
+            </div>
+            <!-- Peer to Peer -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button col-12 d-flex justify-content-between flex-wrap collapsed col-12 d-flex justify-content-between flex-wrap"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false"
+                  aria-controls="collapseEleven">
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/peer_to_peer.png" alt="">
+                    <p class="accordion-head">Peer To Peer</p>
+                  </div>
+
+                </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This Feature Is under Development</strong>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Money -->
+            <div class="accordion-item d-none">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button col-12 d-flex justify-content-between flex-wrap collapsed col-12 d-flex justify-content-between flex-wrap"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false"
+                  aria-controls="collapseTwelve">
+                  <div class="d-flex align-items-center justify-content-center accordion-head-wrapper">
+                    <img class="p-method-icon" src="images/mobile_money_icon.png" alt="">
+                    <p class="accordion-head">Mobile Money</p>
+                  </div>
+
+                </button>
+              </h2>
+              <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="d-flex flex-column netbanking-wrapper justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center pix-input-wrapper w-75">
+                      <div class="d-flex flex-column form-and-label-wrapper w-100">
+                        <label for="formGroupExampleInput" class="form-label">Select an option</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1">Memo</option>
+                          <option value="2">Mpesa</option>
+                          <option value="4">Option 1</option>
+                          <option value="5">Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="button-wrapper d-flex justify-content-end">
+                      <button type="button" class="btn btn-primary checkout-button">Proceed to Pay</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- D-none -->
+          </div>
+            <!-- cancel button -->
+        <div class="button-wrapper w-100 d-flex justify-content-between align-items-center ">
+          <button class="smallbtn d-flex align-items-center justify-content-center gap-12-box">Order ID
+            <img src="images/visibility.png" alt="">
+          </button>
+          <button type="button" class="btn btn-primary checkout-cancel">Cancel</button>
+        </div>
+          <!-- UPI Confirm transaction -->
+          <div class=" d-flex flex-column justify-content-center align-items-center gap-4">
+            <img class="upi-expiry" src="images/session_UPI_mainIcon.png" alt="">
+            <div class="d-flex flex-column justify-content-center align-items-center expiry-transaction-wrapper">
+              <h2 class="payment-head">Confirm Your Transaction</h2>
+              <p class="upi-expiry-tag">Go to your linked UPI app and confirm your transaction before session time runs out</p>
+            </div>
+          </div>
+          <!--  Transaction timed out state -->
+          <div class=" d-flex flex-column justify-content-center align-items-center gap-4">
+            <img class="upi-expiry" src="images/transaction-timed-out_mainIcon.png" alt="transaction timed out image">
+            <div class="d-flex flex-column justify-content-center align-items-center expiry-transaction-wrapper">
+              <h2 class="payment-head">Transaction timed out.</h2>
+              <p class="upi-expiry-tag">You have run out of time to complete this transaction. Please try again.</p>
+              <!-- Button -->
+              <div class="button-wrapper">
+                <button type="button" class="btn btn-primary checkout-button">Return Home</button>
+              </div>
+            </div>
+          </div>
+          <!--  UPI ID not valid state -->
+          <div class=" d-flex flex-column justify-content-center align-items-center gap-4">
+            <img class="upi-expiry" src="images/ID-not-verified.png" alt="transaction timed out image">
+            <div class="d-flex flex-column justify-content-center align-items-center expiry-transaction-wrapper">
+              <h2 class="payment-head">UPI ID not valid</h2>
+              <p class="upi-expiry-tag">The UPI ID you have entered is doesn't exist or is incorrect. Please re-check your UPI ID and try again.</p>
+              <!-- Button -->
+              <div class="button-wrapper">
+                <button type="button" class="btn btn-primary checkout-button">Try again</button>
+              </div>
+            </div>
+          </div>
+          <!--  Transaction Limit Exceeded state -->
+          <div class=" d-flex flex-column justify-content-center align-items-center gap-4">
+            <img class="upi-expiry" src="images/transaction-limit.png" alt="transaction timed out image">
+            <div class="d-flex flex-column justify-content-center align-items-center expiry-transaction-wrapper">
+              <h2 class="payment-head">Transaction Limit Exceeded.</h2>
+              <p class="upi-expiry-tag">You have reached your daily transaction limit for this UPI ID.</p>
+              <!-- Button -->
+              <div class="button-wrapper">
+                <button type="button" class="btn btn-primary checkout-button">Return Home</button>
+              </div>
+            </div>
+          </div>
+          <!--  You have made too many transactions state -->
+          <div class=" d-flex flex-column justify-content-center align-items-center gap-4">
+            <img class="upi-expiry" src="images/Limit_exceeded.png" alt="transaction timed out image">
+            <div class="d-flex flex-column justify-content-center align-items-center expiry-transaction-wrapper">
+              <h2 class="payment-head">You have made too many transactions.</h2>
+              <p class="upi-expiry-tag">You have reached the maximum number of transactions allowed for today.</p>
+            </div>
+            <!-- Button -->
+            <div class="button-wrapper">
+              <button type="button" class="btn btn-primary checkout-button">Return Home</button>
+            </div>
+          </div>
+        
+
+        </div>
+    </div>
+
+  </div>
+
+
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

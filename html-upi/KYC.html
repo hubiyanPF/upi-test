@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KYC</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+
+  <!-- Wrapper Div -->
+  <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+
+    <!-- Enter Aadhaar number -->
+    <div class="kyc-bg kyc-bg kyc-bg kyc-bg kyc-bg d-flex flex-column justify-content-center align-items-center">
+
+      <!-- Heading and Logo -->
+      <div class="d-flex w-100 justify-content-between kyc-head">
+        <div class="d-flex flex-column justify-content-between align-items-start w-100 kyc-head-and-tag">
+          <h1>Let’s get you verified first.</h1>
+          <h3 class="kyc-tag">Enter your Aadhaar number to kickstart the secure KYC verification process. </h3>
+        </div>
+        <img class="logo Aadhar_logo" src="images/Aadhar_logo.png" alt="">
+      </div>
+
+
+      <div class="d-flex flex-column align-items-end w-100 form-wrapper">
+
+        <div class="d-flex flex-column form-and-label-wrapper w-100">
+          <label for="formGroupExampleInput" class="form-label">Enter Aadhaar Number</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 7890" maxlength="14">
+        </div>
+
+        <div class="button-wrapper">
+          <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+            <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+              aria-hidden="true">
+              <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+            </span>
+            Get Verified
+          </button>
+        </div>
+      </div>
+
+      <div class="alert-chip-with-icon d-flex justify-content-center align-items-center gap-2">
+        <img class="danger_icon" src="images/danger_icon.png" alt="danger Icon">
+        <p class="chip-text danger-text">ID verification is required only during the first deposit. Please do not
+          refresh or close this page.</p>
+      </div>
+
+    </div>
+
+
+    <!-- Enter OTP -->
+    <div class="kyc-bg d-flex flex-column justify-content-center align-items-center">
+
+      <!-- Heading and Logo -->
+      <div class="d-flex w-100 justify-content-between kyc-head">
+        <div class="d-flex flex-column justify-content-between align-items-start w-100 kyc-head-and-tag">
+          <h1>Enter OTP</h1>
+          <h3 class="kyc-tag">Enter the OTP you received on your mobile number registered with Aadhaar.</h3>
+        </div>
+        <img class="logo Aadhar_logo" src="images/Aadhar_logo.png" alt="">
+      </div>
+
+
+      <div class="d-flex flex-column align-items-end w-100 form-wrapper">
+        <div class="d-flex flex-column form-and-label-wrapper w-100">
+          <label for="formGroupExampleInput" class="form-label">Enter Aadhaar Number</label>
+          <input type="number" class="form-control disabled" id="formGroupExampleInput" placeholder="1234 5678 7890" disabled>
+        </div>
+        <div class="d-flex flex-column form-and-label-wrapper w-100">
+          <label for="exampleInputPassword1" class="form-label">Enter OTP</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-primary checkout-button d-flex gap-3 align-items-center" type="button">
+            <span class="spinner-border spinner-border-sm d-flex align-items-center justify-content-center"
+              aria-hidden="true">
+              <img class="custom-spinner" src="images/Ellipse-48.png" alt="">
+            </span>
+            Submit OTP
+          </button>
+        </div>
+      </div>
+
+      <div class="alert-chip-with-icon d-flex justify-content-center align-items-center gap-2">
+        <img class="danger_icon" src="images/danger_icon.png" alt="danger Icon">
+        <p class="chip-text danger-text">ID verification is required only during the first deposit. Please do not
+          refresh or close this page.</p>
+      </div>
+
+    </div>
+
+
+    <!-- KYC Verified -->
+    <div class="kyc-bg d-flex flex-column justify-content-center align-items-center">
+
+      <!-- Heading and Logo -->
+      <div class="d-flex w-100 justify-content-between">
+        <div class="d-flex flex-column justify-content-center align-items-start w-100 kyc-head-and-tag">
+          <h1>Verification Complete.</h1>
+          <h3 class="kyc-tag">Congratulations! Your KYC has been verified successfully.</h3>
+        </div>
+      </div>
+
+      <img class="w-50 kyc-illustration" src="images/kyc-verified-illu.png" alt="kyc verified image">
+
+      <p class="state-descrition">
+        <a class="link-opacity-100-hover link-kyc" href="#">Click here</a> to continue if you haven't been redirected.
+      </p>
+
+
+
+
+    </div>
+
+
+    <!-- Verification is in progress. -->
+    <div class="kyc-bg d-flex flex-column justify-content-center align-items-center">
+
+      <!-- Heading and Logo -->
+      <div class="d-flex w-100 justify-content-between">
+        <div class="d-flex flex-column justify-content-center align-items-start w-100 kyc-head-and-tag">
+          <h1>Verification is in progress.</h1>
+          <h3 class="kyc-tag">We are verifying your credentials. This may take a few minutes, please wait</h3>
+        </div>
+      </div>
+
+      <img class="w-50 kyc-illustration" src="images/kyc-in-progress-illu.png" alt="kyc processing image">
+
+      <div class="alert-chip-with-icon d-flex justify-content-center align-items-center gap-2">
+        <img class="danger_icon" src="images/danger_icon.png" alt="danger Icon">
+        <p class="chip-text danger-text">ID verification is required only during the first deposit. Please do not
+          refresh or close this page.</p>
+      </div>
+
+
+    </div>
+
+
+
+    <!-- Verification not successful. -->
+    <div class="kyc-bg d-flex flex-column justify-content-center align-items-center">
+
+      <!-- Heading and Logo -->
+      <div class="d-flex w-100 justify-content-between">
+        <div class="d-flex flex-column justify-content-center align-items-start w-100 kyc-head-and-tag">
+          <h1>Verification not successful.</h1>
+          <h3 class="kyc-tag">Please make sure you enter correct Aadhaar number and OTP.</h3>
+        </div>
+      </div>
+
+      <img class="w-50 kyc-illustration" src="images/kyc-in-rejected-illu.png" alt="kyc rejected image">
+
+      <div class="button-wrapper">
+        <button type="button" class="btn btn-primary checkout-button">Return Home</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

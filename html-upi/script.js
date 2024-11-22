@@ -16,21 +16,33 @@ document.getElementById('cardNumber').addEventListener('input', function (e) {
     e.target.value = formattedValue.substring(0, 19); // Limiting to 19 characters including spaces
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Select the input field
-    const upiInput = document.querySelector(".upi-input");
-  
-    if (upiInput) {
-      // Focus on the input field
-      upiInput.focus();
-  
-      // For iOS devices: create a temporary blur and focus hack to trigger the keyboard
-      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        setTimeout(() => {
-          upiInput.blur();
-          upiInput.focus();
-        }, 200);
-      }
+
+// inout
+document.addEventListener("DOMContentLoaded", function () {
+  const upiInput = document.querySelector(".upi-input");
+
+  if (upiInput) {
+    // Focus on the input field
+    upiInput.focus();
+
+    // For iOS devices: create a temporary blur and focus hack to trigger the keyboard
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (isIOS) {
+      setTimeout(() => {
+        upiInput.blur();
+        upiInput.focus();
+      }, 200);
     }
-  });
+
+    // For Android devices: Use touchstart to engage focus
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    if (isAndroid) {
+      document.body.addEventListener("touchstart", function tempFocus() {
+        upiInput.focus();
+        document.body.removeEventListener("touchstart", tempFocus);
+      });
+    }
+  }
+});
+
   

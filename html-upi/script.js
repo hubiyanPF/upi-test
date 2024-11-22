@@ -22,27 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const upiInput = document.querySelector(".upi-input");
 
   if (upiInput) {
-    // Focus on the input field
+    // Attempt to focus on the input field
     upiInput.focus();
 
-    // For iOS devices: create a temporary blur and focus hack to trigger the keyboard
+    // Add a touch event listener to trigger focus if the browser requires user interaction
+    document.body.addEventListener("click", function handleClick() {
+      upiInput.focus();
+      document.body.removeEventListener("click", handleClick); // Remove listener after it's triggered
+    });
+
+    // Specifically handle iOS devices
     const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
     if (isIOS) {
       setTimeout(() => {
+        // Blur and re-focus hack
         upiInput.blur();
         upiInput.focus();
-      }, 200);
-    }
-
-    // For Android devices: Use touchstart to engage focus
-    const isAndroid = /Android/i.test(navigator.userAgent);
-    if (isAndroid) {
-      document.body.addEventListener("touchstart", function tempFocus() {
-        upiInput.focus();
-        document.body.removeEventListener("touchstart", tempFocus);
-      });
+      }, 300);
     }
   }
 });
+
 
   
